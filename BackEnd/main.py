@@ -30,7 +30,7 @@ def get_recipe(request: RecipeRequest):
         # Lemmatization
         lemmatized = [lemmatizer.lemmatize(word) for word in tokens]
 
-        # Additional information
+      
         processed_message = ' '.join(lemmatized) + " should be Tunisian recipe"
 
         # Call OpenAI GPT-3.5-turbo
